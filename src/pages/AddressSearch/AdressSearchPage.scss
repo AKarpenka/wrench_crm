@@ -65,6 +65,7 @@
             span {
                 font-size: $font-size-big;
                 font-weight: $font-bold;
+                margin-left: 16px;
             }
 
             &:hover {
@@ -116,5 +117,18 @@
             }
         }
 
+    }
+}
+
+@media (max-width: 420px) {
+    .searching {
+        div.searching-panel {
+            flex-direction: column;
+
+            button {
+                margin-left: 0;
+                margin-top: 24px;
+            }
+        }
     }
 }

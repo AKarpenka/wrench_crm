@@ -10,3 +10,11 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 768px) {
+  .App {
+    main {
+      grid-template-columns: 90px 1fr;
+    }
+  }
+}

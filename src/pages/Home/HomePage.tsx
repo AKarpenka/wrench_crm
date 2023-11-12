@@ -19,9 +19,7 @@ const HomePage = () => {
             <p>Обновление CRM до 1.2</p>
             <ul>
                 {text?.map((el, idx) => (
-                    <li key={idx} dangerouslySetInnerHTML={{__html: `<p>${el}</p>`}}>
-                        {/* <p>{el}</p> */}
-                    </li>
+                    <li key={idx} dangerouslySetInnerHTML={{__html: `<p>${el}</p>`}}></li>
                 ))}
             </ul>
             

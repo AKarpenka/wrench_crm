@@ -14,7 +14,6 @@ const AdressSearchPage = () => {
 
     const getAdresses = (queryStr) => {
         setLoading(true);
-        setNotFound(false);
         setAddresses([]);
         const options: unknown = {
             method: "POST",
@@ -59,6 +58,7 @@ const AdressSearchPage = () => {
     };
 
     const handleSearch = () => {
+        setNotFound(false);
         if(inputValue.trim().length > 2) {
             setIsValidValue(true);
             getAdresses(inputValue.trim());

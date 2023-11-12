@@ -85,3 +85,69 @@ nav {
         margin-left: 48px;
     }
 }
+
+@media (max-width: 768px) {
+    nav {
+        transition: all 0.1s ease-in-out;
+
+        h2 {
+            display: none;
+        }
+
+        ul {
+            margin-top: 0;
+
+            li {
+                p {
+                    display: none;
+                }
+            }
+
+            .settings {
+                .toggle-btn {
+                    display: none;
+                }
+            }
+        }
+
+        .inner-nav-list {
+            display: none;
+        }
+    }
+
+    nav:hover, nav:active{
+        background-color: $white;
+        width: 300px;
+        z-index: 99;
+
+        h2 {
+            display: block;
+        }
+
+        ul {
+            margin-top: 32px;
+
+            li {
+                p {
+                    display: inline-block;
+                }
+            }
+
+            .settings {
+                .toggle-btn {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .inner-nav-list {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    nav:hover, nav:active{
+        width: 250px;
+    }
+}

@@ -24,5 +24,17 @@ header {
             }
         }
     }
-    
+}
+
+@media (max-width: 420px) {
+    header {
+        .content {
+            flex-direction: column;
+            align-items: flex-start;
+
+            div:last-child {
+                margin-top: 24px;
+            }
+        }
+    }
 }
