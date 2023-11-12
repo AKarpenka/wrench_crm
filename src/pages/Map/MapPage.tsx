@@ -1,7 +1,5 @@
 const MapPage = () => {
-    return (
-        <p>Map</p>
-    )
+  return <p>Map</p>
 }
 
-export default MapPage;
+export default MapPage

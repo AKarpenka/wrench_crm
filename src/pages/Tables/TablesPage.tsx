@@ -1,7 +1,5 @@
 const TablesPage = () => {
-    return (
-        <p>Tables</p>
-    )
+  return <p>Tables</p>
 }
 
-export default TablesPage;
+export default TablesPage

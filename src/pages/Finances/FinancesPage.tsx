@@ -1,7 +1,5 @@
 const FinancesPage = () => {
-    return (
-        <p>Finences</p>
-    )
+  return <p>Finences</p>
 }
 
-export default FinancesPage;
+export default FinancesPage

@@ -1,7 +1,5 @@
 const WidgetsPage = () => {
-    return (
-        <p>Widgets Page</p>
-    )
+  return <p>Widgets Page</p>
 }
 
-export default WidgetsPage;
+export default WidgetsPage

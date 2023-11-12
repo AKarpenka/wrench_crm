@@ -1,7 +1,5 @@
 const CalendarPage = () => {
-    return (
-        <p>Calendar</p>
-    )
+  return <p>Calendar</p>
 }
 
-export default CalendarPage;
+export default CalendarPage

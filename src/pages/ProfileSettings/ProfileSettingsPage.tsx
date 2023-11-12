@@ -1,7 +1,5 @@
 const ProfileSettingsPage = () => {
-    return (
-        <p>Profile Settings</p>
-    )
+  return <p>Profile Settings</p>
 }
 
-export default ProfileSettingsPage;
+export default ProfileSettingsPage
