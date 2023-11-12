@@ -1,6 +1,6 @@
 import './navigation.scss';
 import { Link, useLocation } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 //icons
 import HomeIcon from '../icons/homeIcon';
@@ -17,13 +17,6 @@ import ExitIcon from '../icons/exitIcon';
 const Navigation = () => {
     const [showSettings, setShowSettings] = useState(true);
     const {pathname} = useLocation();
-    const [link, setLink] = useState('/');
-
-    useEffect(() => {
-        setLink(pathname);
-    }, [pathname]);
-
-    console.log(link);
 
     const renderSettings = () => (
         <ul className="inner-nav-list">

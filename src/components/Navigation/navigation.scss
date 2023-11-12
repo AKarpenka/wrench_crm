@@ -14,7 +14,7 @@ nav {
     }
 
     h2 {
-        font-size: $font-normal;
+        font-size: $font-size-normal;
         font-weight: $font-bold;
     }
 
@@ -43,7 +43,7 @@ nav {
             }
 
             p {
-                font-size: $font-normal;
+                font-size: $font-size-normal;
                 font-weight: $font-medium;
                 flex-grow: 1;
                 margin-left: 16px;
