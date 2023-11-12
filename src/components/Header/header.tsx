@@ -11,7 +11,7 @@ const Header = () => {
             <div className="content">
                 <div>
                     <HeaderLogo/>
-                    <h1>Wrench SRM</h1>
+                    <h1>Wrench CRM</h1>
                 </div>
                 <div>
                     <UserInCircleIcon/>
