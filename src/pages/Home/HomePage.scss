@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.home {
+    padding: 32px;
+    text-align: start;
+    color: $dark-gray;
+    overflow-y: auto;
+
+    h2 {
+        font-size: $font-size-big;
+        font-weight: $font-bold;
+    }
+
+    p {
+        margin-top: 16px;
+        font-size: $font-size-normal;
+        font-weight: $font-normal;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+}

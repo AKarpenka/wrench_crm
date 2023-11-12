@@ -26,8 +26,7 @@ function App() {
             <Route path="/map" element={<MapPage />} />
             <Route path="/widgets" element={<WidgetsPage />} />
             <Route path="/profile-settings" element={<ProfileSettingsPage />} />
-            <Route path="/finences" element={<FinancesPage />} />
-            <Route path="**" element={<FinancesPage />} />
+            <Route path="/finances" element={<FinancesPage />} />
           </Routes>
         </main>
       </div>

@@ -68,7 +68,7 @@ const AdressSearchPage = () => {
     };
 
     return (
-        <section>
+        <section className="searching">
             <h2>Поиск адресов</h2>
             <p>Введите интересующий вас адрес</p>
             <div className="searching-panel">

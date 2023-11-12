@@ -28,11 +28,11 @@ const Navigation = () => {
                 {pathname ==='/profile-settings' && <div></div>}
             </li>
             <li>
-                <Link to='/finences'>
+                <Link to='/finances'>
                     <span><FinanceIcon/></span>
                     <p>Управление финансами</p>
                 </Link>
-                {pathname ==='/finences' && <div></div>}
+                {pathname ==='/finances' && <div></div>}
             </li>
         </ul>
     );
