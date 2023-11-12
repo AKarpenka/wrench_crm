@@ -1,4 +1,6 @@
 import './navigation.scss';
+import { Link, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 //icons
 import HomeIcon from '../icons/homeIcon';
@@ -11,20 +13,33 @@ import SettingsIcon from '../icons/settingsIcon';
 import UserIcon from '../icons/userIcon';
 import FinanceIcon from '../icons/financeIcon';
 import ExitIcon from '../icons/exitIcon';
-import { useState } from 'react';
 
 const Navigation = () => {
     const [showSettings, setShowSettings] = useState(true);
+    const {pathname} = useLocation();
+    const [link, setLink] = useState('/');
+
+    useEffect(() => {
+        setLink(pathname);
+    }, [pathname]);
+
+    console.log(link);
 
     const renderSettings = () => (
         <ul className="inner-nav-list">
             <li>
-                <span><UserIcon/></span>
-                <p>Настройки профиля</p>
+                <Link to='/profile-settings'>
+                    <span><UserIcon/></span>
+                    <p>Настройки профиля</p>
+                </Link>
+                {pathname ==='/profile-settings' && <div></div>}
             </li>
             <li>
-                <span><FinanceIcon/></span>
-                <p>Управление финансами</p>
+                <Link to='/finences'>
+                    <span><FinanceIcon/></span>
+                    <p>Управление финансами</p>
+                </Link>
+                {pathname ==='/finences' && <div></div>}
             </li>
         </ul>
     );
@@ -36,29 +51,46 @@ const Navigation = () => {
             <h2>Меню</h2>
             <ul>
                 <li>
-                    <span><HomeIcon/></span>
-                    <p>Главная</p>
-                    <div></div>
+                    <Link to='/'>
+                        <span><HomeIcon/></span>
+                        <p>Главная</p>
+                    </Link>
+                    {pathname ==='/' && <div></div>}
                 </li>
                 <li>
-                    <span><SearchIcon/></span>
-                    <p>Поиск адресов</p>
+                    <Link to='/address'>
+                        <span><SearchIcon/></span>
+                        <p>Поиск адресов</p>
+                    </Link>
+                    {pathname ==='/address' && <div></div>}
                 </li>
                 <li>
-                    <span><TablesIcon/></span>
-                    <p>Таблицы</p>
+                    <Link to='/tables'>
+                        <span><TablesIcon/></span>
+                        <p>Таблицы</p>
+                    </Link>
+                    {pathname ==='/tables' && <div></div>}
                 </li>
                 <li>
-                    <span><CalendarIcon/></span>
-                    <p>Календарь</p>
+                    <Link to='/calendar'>
+                        <span><CalendarIcon/></span>
+                        <p>Календарь</p>
+                    </Link>
+                    {pathname ==='/calendar' && <div></div>}
                 </li>
                 <li>
-                    <span><MapIcon/></span>
-                    <p>Карты</p>
+                    <Link to='/map'>
+                        <span><MapIcon/></span>
+                        <p>Карты</p>
+                    </Link>
+                    {pathname ==='/map' && <div></div>}
                 </li>
                 <li>
-                    <span><WidgetsIcon/></span>
-                    <p>Виджеты</p>
+                    <Link to='/widgets'>
+                        <span><WidgetsIcon/></span>
+                        <p>Виджеты</p>
+                    </Link>
+                    {pathname ==='/widgets' && <div></div>}
                 </li>
                 <li onClick={toggleShowSettings} className={`settings ${showSettings ? 'active' : ''}`}>
                     <span><SettingsIcon/></span>
