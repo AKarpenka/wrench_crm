@@ -1,0 +1,28 @@
+@import '../../variables.scss';
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: $purple;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $white;
+        font-weight: $font-bold;
+        padding: 16px 32px;
+
+        div {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+
+            h1, span {
+                font-size: $font-normal;
+                margin-left: 16px;
+            }
+        }
+    }
+    
+}
